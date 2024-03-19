@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Releway', sans-serif;
+    font-style: 48px;
+    background-color: #333;
+}
+
+
+.long{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    height: 600px;
+    width: 150px;
+    padding: 10px;
+    background-color: tomato;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.long:hover{
+    height: 200px;
+}
+
+.big{
+    position: absolute;
+    top: 250px;
+    right: 50px;
+    height: 600px;
+    width: 800px;
+    background-color: royalblue;
+    transition: background-color 1s;
+}
+
+.child{
+    height: 200px;
+    border: 3px solid black;
+}
+
+.first + div{
+    background-color: lime;
+}
+
+.first:hover ~ .child{
+    background-color: gold;
+
+}
